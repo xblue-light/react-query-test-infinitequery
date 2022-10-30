@@ -1,5 +1,5 @@
 import React from "react";
-import { useUsersQuery } from "./useInfiniteQuery";
+import { useUsersQuery } from "./hooks/useInfiniteQuery";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { User } from "./types";
 
@@ -65,6 +65,7 @@ export default function App() {
           ))}
         </InfiniteScroll>
       </div>
+      <br />
     </div>
   );
 }

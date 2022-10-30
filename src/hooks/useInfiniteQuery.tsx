@@ -1,6 +1,6 @@
 import { useInfiniteQuery } from "react-query";
-import axiosClient from "./api/axiosInstance";
-import { UsersPage } from "./types";
+import axiosClient from "../api/axiosInstance";
+import { UsersPage } from "../types";
 
 async function getData({ pageParam = 0 }) {
   // 2- Update the http client to use axiosClient instead of fetch api
@@ -8,7 +8,7 @@ async function getData({ pageParam = 0 }) {
     url: `/data/v1/user?page=${pageParam}&limit=50`,
     method: "GET",
     headers: {
-      "app-id": "62f43477f19452557ba1ce76",
+      "app-id": "",
     },
   });
 
