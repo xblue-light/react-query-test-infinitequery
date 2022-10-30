@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { useUsersQuery } from "../useInfiniteQuery";
+import { useUsersQuery } from "../hooks/useInfiniteQuery";
 import App from "../App";
 import { responseForPage0 } from "../fixtures";
 
@@ -8,7 +8,7 @@ import { responseForPage0 } from "../fixtures";
 const mockedUseUsersQuery = useUsersQuery as jest.Mock<any>;
 
 // Mock the hook module
-jest.mock("../useInfiniteQuery");
+jest.mock("../hooks/useInfiniteQuery");
 
 describe("<App />", () => {
   beforeEach(() => {
