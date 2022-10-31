@@ -70,9 +70,7 @@ describe("<CharacterCard />", () => {
       },
     }));
     render(<CharacterCard {...props} />);
-
     const firstEpisode = `${data.results[0].episode}`;
-
     expect(screen.getByText(firstEpisode)).toBeInTheDocument();
   });
 });

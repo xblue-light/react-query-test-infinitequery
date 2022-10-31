@@ -11,8 +11,11 @@ function CharacterCard({ data, isLoading, isError }: any) {
   }
   return (
     <>
-      {data &&
-        data?.results?.map((val: any) => <li key={val?.id}>{val?.episode}</li>)}
+      {data
+        ? data?.results?.map((val: any) => (
+            <li key={val?.id}>{val?.episode}</li>
+          ))
+        : null}
     </>
   );
 }
