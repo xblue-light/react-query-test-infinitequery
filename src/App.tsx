@@ -20,7 +20,7 @@ export default function App() {
   }, 0);
 
   return (
-    <div style={{ margin: "20px" }}>
+    <div>
       <h1>Users List</h1>
       <div
         style={{
